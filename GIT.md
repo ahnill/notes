@@ -9,6 +9,9 @@
 提交修改：
 > git commit -m "Git Tracks Changes"
 
+拉取文件：
+> git pull
+
 撤销/恢复修改：
 > git checkout -- readme.txt
 
