@@ -12,10 +12,16 @@
 ## 服务提供者 ##
 
 创建服务提供者
-> php artisan make:provider RiakServiceProvider
+> php artisan make:provider [Name]ServiceProvider
 
 
 ## 中间件 ##
 
 创建中间件
-> php artisan make:middleware CheckAge
+> php artisan make:middleware [ClassName]
+
+
+## 数据库模型 ##
+
+创建模型
+> php artisan make:model Models/[ClassName]
