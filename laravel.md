@@ -29,4 +29,8 @@
 ## 数据库模型 ##
 
 创建模型
+> php artisan make:model [ClassName]
 > php artisan make:model Models/[ClassName]
+
+创建模板并生成迁移文件
+> php artisan make:model Models/[ClassName] -m
