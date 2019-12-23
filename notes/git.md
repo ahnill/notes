@@ -4,9 +4,13 @@
 <br>
 
 设置用户名和电子邮箱：
-> cd ~/.ssh/  
 > git config --global user.name "your-github-username"  
-> git config --global user.email "your-github@email.com"  
+> git config --global user.email "your-github@email.com"
+
+<br>
+
+生成并添加SSHkey：
+> cd ~/.ssh/  
 > ssh-keygen -t rsa -C "your-github@email.com"
 
 <br>
