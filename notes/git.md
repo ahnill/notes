@@ -1,5 +1,14 @@
 # GIT常用命令 #
 
+
+<br>
+
+设置用户名和电子邮箱：
+> cd ~/.ssh/
+> git config --global user.name "your-github-username"
+> git config --global user.email "your-github@email.com"
+> ssh-keygen -t rsa -C "your-github@email.com"
+
 <br>
 
 添加/修改文件：
@@ -28,7 +37,7 @@
 <br>
 
 查看修改状态：
-> git status -s  
+> git status -s
 > git status
 
 <br>
@@ -59,13 +68,13 @@
 <br>
 
 切换分支：
-> git checkout dev  
+> git checkout dev
 > git switch dev
 
 <br>
 
 创建并切换分支：
-> git checkout -b dev  
+> git checkout -b dev
 > git switch -c dev
 
 <br>
