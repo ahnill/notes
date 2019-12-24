@@ -2,7 +2,7 @@
 
 <br>
 
-目录 [study] 里面是学习笔记文件！
+目录 [notes] 里面是学习笔记文件！
 
 <br>
 
@@ -85,3 +85,15 @@
 
 删除分支：
 > git branch -d dev
+
+<br>
+
+设置用户名和电子邮箱：
+> git config --global user.name "your-github-username"  
+> git config --global user.email "your-github@email.com"
+
+<br>
+
+生成并添加SSHkey：
+> cd ~/.ssh/  
+> ssh-keygen -t rsa -C "your-github@email.com"
