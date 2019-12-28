@@ -41,6 +41,11 @@
 
 <br>
 
+克隆远程库：
+> git clone git@github.com:githubUserName/projectName.git
+
+<br>
+
 关联远程库：
 > git remote add origin git@github.com:githubUserName/projectName.git
 
@@ -48,11 +53,6 @@
 
 推送到远程库：
 > git push -u origin master
-
-<br>
-
-克隆远程库：
-> git clone git@github.com:githubUserName/projectName.git
 
 <br>
 
