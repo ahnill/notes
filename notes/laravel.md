@@ -10,6 +10,13 @@
 运行迁移
 > php artisan migrate
 
+生成填充
+> php artisan make:seeder [name]TableSeeder
+
+运行填充
+> php artisan db:seed  
+> php artisan db:seed --class=[name]TableSeeder
+
 <br>
 
 ## 服务提供者 ##
