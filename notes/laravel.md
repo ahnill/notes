@@ -10,6 +10,9 @@
 运行迁移
 > php artisan migrate
 
+更新迁移
+> php artisan migrate:fresh
+
 生成填充
 > php artisan make:seeder [name]TableSeeder
 
