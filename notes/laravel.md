@@ -50,7 +50,7 @@
 > composer require "darkaonline/l5-swagger"
 
 生成文档
-> phpartisan l5-swagger:generate
+> php artisan l5-swagger:generate
 
 访问地址
 > https//your-domain.com/api/docs
