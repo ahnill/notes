@@ -41,3 +41,16 @@
 
 创建模板并生成迁移文件
 > php artisan make:model Models/[ClassName] -m
+
+<br>
+
+## L5 Swagger 插件 ##
+
+引入插件
+> composer require "darkaonline/l5-swagger"
+
+生成文档
+> phpartisan l5-swagger:generate
+
+访问地址
+> https//your-domain.com/api/docs
