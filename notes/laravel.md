@@ -10,7 +10,7 @@
 运行迁移
 > php artisan migrate
 
-更新迁移
+刷新迁移
 > php artisan migrate:fresh
 
 生成填充
@@ -19,6 +19,9 @@
 运行填充
 > php artisan db:seed  
 > php artisan db:seed --class=[name]TableSeeder
+
+刷新并填充
+> php artisan migrate:fresh --seed
 
 <br>
 
