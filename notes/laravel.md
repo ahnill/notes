@@ -9,9 +9,7 @@
 
 运行迁移
 > php artisan migrate
-
-刷新迁移
-> php artisan migrate:fresh
+> php artisan migrate --path=/database/migrations/2019_12_18_061042_create_goods_categories_table.php
 
 生成填充
 > php artisan make:seeder [name]TableSeeder
@@ -19,6 +17,9 @@
 运行填充
 > php artisan db:seed  
 > php artisan db:seed --class=[name]TableSeeder
+
+刷新迁移
+> php artisan migrate:fresh
 
 刷新并填充
 > php artisan migrate:fresh --seed
