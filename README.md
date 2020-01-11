@@ -6,9 +6,9 @@
 
 <br>
 
-Composer常用命令: [https://github.com/ahnill/notes/blob/master/notes/composer.md](composer.md)  
-Laravel常用命令: [https://github.com/ahnill/notes/blob/master/notes/laravel.md](laravel.md)  
-GIT常用命令: [https://github.com/ahnill/notes/blob/master/notes/git.md](git.md)
+Composer常用命令: [composer.md](https://github.com/ahnill/notes/blob/master/notes/composer.md)  
+Laravel常用命令: [laravel.md](https://github.com/ahnill/notes/blob/master/notes/laravel.md)  
+GIT常用命令: [git.md](https://github.com/ahnill/notes/blob/master/notes/git.md)
 
 <br>
 
