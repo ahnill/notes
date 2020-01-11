@@ -8,8 +8,8 @@
 > php artisan make:migration create_[name]_table
 
 运行迁移
-> php artisan migrate
-> php artisan migrate --path=/database/migrations/2019_12_18_061042_create_goods_categories_table.php
+> php artisan migrate  
+> php artisan migrate --path=/database/migrations/XXXX_XX_XX_XXXX_create_[name]_table.php
 
 生成填充
 > php artisan make:seeder [name]TableSeeder
