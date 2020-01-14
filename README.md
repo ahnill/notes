@@ -8,6 +8,7 @@
 
 Composer常用命令：[notes/composer.md](https://github.com/ahnill/notes/blob/master/notes/composer.md)  
 Laravel常用命令：[notes/laravel.md](https://github.com/ahnill/notes/blob/master/notes/laravel.md)  
+Redis常用命令：[notes/redis.md](https://github.com/ahnill/notes/blob/master/notes/redis.md)  
 GIT常用命令：[notes/git.md](https://github.com/ahnill/notes/blob/master/notes/git.md)
 
 <br>
