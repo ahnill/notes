@@ -9,7 +9,7 @@
 
 运行迁移
 > php artisan migrate  
-> php artisan migrate --path=/database/migrations/XXXX_XX_XX_XXXX_create_[name]_table.php
+> php artisan migrate --path=database/migrations/XXXX_XX_XX_XXXX_create_[name]_table.php
 
 生成填充
 > php artisan make:seeder [name]TableSeeder
