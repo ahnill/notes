@@ -40,6 +40,13 @@
 
 <br>
 
+## 计划任务 ##
+
+执行计划任务
+> php artisan schedule:run
+
+<br>
+
 ## 数据库模型 ##
 
 创建模型
