@@ -37,7 +37,12 @@ GIT常用命令：[notes/git.md](https://github.com/ahnill/notes/blob/master/notes/gi
 
 <br>
 
-撤销/恢复修改：
+执行完commit后想撤回commit：
+> git reset --soft HEAD^
+
+<br>
+
+强制撤销/恢复修改：
 > git checkout -- readme.txt
 
 <br>
