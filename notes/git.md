@@ -1,5 +1,9 @@
 # GIT常用命令 #
 
+<br>
+
+安装GIT：
+> yum install git
 
 <br>
 
@@ -40,7 +44,13 @@
 <br>
 
 克隆远程库：
-> git clone git@github.com:githubUserName/projectName.git
+> git clone git@github.com:githubUserName/projectName.git  
+> git clone git@gitee.com:githubUserName/projectName.git
+
+<br>
+
+删除关联远程库：
+> git remote rm origin
 
 <br>
 
