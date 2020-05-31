@@ -54,12 +54,14 @@ GIT常用命令：[notes/git.md](https://github.com/ahnill/notes/blob/master/notes/gi
 <br>
 
 克隆远程库：
-> git clone git@github.com:githubUserName/projectName.git
+> git clone git@github.com:user/project.git 
+> git clone git@gitee.com:user/project.git
 
 <br>
 
 关联远程库：
-> git remote add origin git@github.com:githubUserName/projectName.git
+> git remote add origin git@github.com:user/project.git 
+> git remote add origin git@gitee.com:user/project.git
 
 <br>
 
