@@ -1,9 +1,19 @@
-# GIT常用命令 #
+# 测试GitHub项目 #
 
 <br>
 
-安装GIT：
-> yum install git
+目录 [notes] 里面是学习笔记文件！
+
+<br>
+
+Composer常用命令：[notes/composer.md](https://github.com/ahnill/notes/blob/master/notes/composer.md)  
+Laravel常用命令：[notes/laravel.md](https://github.com/ahnill/notes/blob/master/notes/laravel.md)  
+Redis常用命令：[notes/redis.md](https://github.com/ahnill/notes/blob/master/notes/redis.md)  
+GIT常用命令：[notes/git.md](https://github.com/ahnill/notes/blob/master/notes/git.md)
+
+<br>
+
+## GIT常用命令 ##
 
 <br>
 
@@ -44,19 +54,15 @@
 <br>
 
 克隆远程库：
-> git clone git@github.com:user/project.git 
+> git clone git@github.com:user/project.git  
 > git clone git@gitee.com:user/project.git
 
 <br>
 
-删除关联远程库：
-> git remote rm origin
-
-<br>
-
 关联远程库：
-> git remote add origin git@github.com:user/project.git 
-> git remote add origin git@gitee.com:user/project.git
+> git remote add origin git@github.com:user/project.git  
+> git remote add origin git@gitee.com:user/project.git  
+> git remote set-url origin git@gitee.com:user/project.git
 
 <br>
 
