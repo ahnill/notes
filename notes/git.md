@@ -33,7 +33,8 @@ GIT常用命令：[notes/git.md](https://github.com/ahnill/notes/blob/master/not
 <br>
 
 拉取文件：
-> git pull
+> git pull (将远程主机的最新内容拉下来后直接合并)  
+> git fetch (将远程主机的最新内容拉到本地，用户在检查了以后决定是否合并到工作本机分支中)
 
 <br>
 
@@ -72,7 +73,8 @@ GIT常用命令：[notes/git.md](https://github.com/ahnill/notes/blob/master/not
 <br>
 
 查看分支：
-> git branch
+> git branch (本地分支)  
+> git branch -r (远程分支)
 
 <br>
 
