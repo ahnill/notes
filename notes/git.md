@@ -67,6 +67,11 @@ GIT常用命令：[notes/git.md](https://github.com/ahnill/notes/blob/master/not
 
 <br>
 
+查看远程库：
+> git remote -v
+
+<br>
+
 推送到远程库：
 > git push -u origin master
 
