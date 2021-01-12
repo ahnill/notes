@@ -47,6 +47,16 @@
 
 <br>
 
+## 命令行 ##
+
+创建自定义命令
+> php artisan make:command TaobaoGoodsImport
+
+查看所有命令
+> php artisan list
+
+<br>
+
 ## 数据库模型 ##
 
 创建模型
