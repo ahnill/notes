@@ -17,3 +17,8 @@
 
 修改composer.json文件后刷新：
 > composer dump-autoload 
+
+<br>
+
+命令从当前目录读取composer.json文件，处理了依赖关系，并把其安装/更新到vendor目录下：
+> composer install 
