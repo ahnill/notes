@@ -1,18 +1,3 @@
-# 测试GitHub项目 #
-
-<br>
-
-目录 [notes] 里面是学习笔记文件！
-
-<br>
-
-Composer常用命令：[notes/composer.md](https://github.com/ahnill/notes/blob/master/notes/composer.md)  
-Laravel常用命令：[notes/laravel.md](https://github.com/ahnill/notes/blob/master/notes/laravel.md)  
-Redis常用命令：[notes/redis.md](https://github.com/ahnill/notes/blob/master/notes/redis.md)  
-GIT常用命令：[notes/git.md](https://github.com/ahnill/notes/blob/master/notes/git.md)
-
-<br>
-
 ## GIT常用命令 ##
 
 <br>
@@ -45,6 +30,11 @@ GIT常用命令：[notes/git.md](https://github.com/ahnill/notes/blob/master/not
 
 强制撤销/恢复修改：
 > git checkout -- readme.txt
+
+<br>
+
+强制回滚：
+> git reset --hard ***version*code***
 
 <br>
 
