@@ -100,12 +100,14 @@
 
 <br>
 
+查看用户名和电子邮箱：
+> git config user.name  
+> git config user.email  
+　  
 设置用户名和电子邮箱：
 > git config --global user.name "your-github-username"  
-> git config --global user.email "your-github@email.com"
-
-<br>
-
+> git config --global user.email "your-github@email.com"  
+　  
 生成并添加SSHkey：
 > cd ~/.ssh/  
 > ssh-keygen -t rsa -C "your-github@email.com"
