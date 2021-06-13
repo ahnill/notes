@@ -57,6 +57,12 @@
 
 <br>
 
+关联多个远程库：
+> git remote set-url --add origin https://github.com/user/project.git  
+> git remote set-url --add origin https://gitee.com/user/project.git
+
+<br>
+
 查看远程库：
 > git remote -v
 
@@ -102,12 +108,16 @@
 
 查看用户名和电子邮箱：
 > git config user.name  
-> git config user.email  
-　  
+> git config user.email
+
+<br>
+
 设置用户名和电子邮箱：
 > git config --global user.name "your-github-username"  
-> git config --global user.email "your-github@email.com"  
-　  
+> git config --global user.email "your-github@email.com"
+
+<br>
+
 生成并添加SSHkey：
 > cd ~/.ssh/  
 > ssh-keygen -t rsa -C "your-github@email.com"
