@@ -7,19 +7,29 @@
 生成迁移
 > php artisan make:migration create_[name]_table
 
+<br>
+
 运行迁移
 > php artisan migrate  
 > php artisan migrate --path=database/migrations/XXXX_XX_XX_XXXX_create_[name]_table.php
 
+<br>
+
 生成填充
 > php artisan make:seeder [name]TableSeeder
+
+<br>
 
 运行填充
 > php artisan db:seed  
 > php artisan db:seed --class=[name]TableSeeder
 
+<br>
+
 刷新迁移
 > php artisan migrate:fresh
+
+<br>
 
 刷新并填充
 > php artisan migrate:fresh --seed
@@ -52,6 +62,8 @@
 创建自定义命令
 > php artisan make:command TestCommandClassName
 
+<br>
+
 查看所有命令
 > php artisan list
 
@@ -63,6 +75,8 @@
 > php artisan make:model [ClassName]  
 > php artisan make:model Models/[ClassName]
 
+<br>
+
 创建模板并生成迁移文件
 > php artisan make:model Models/[ClassName] -m
 
@@ -73,8 +87,12 @@
 引入插件
 > composer require "darkaonline/l5-swagger"
 
+<br>
+
 生成文档
 > php artisan l5-swagger:generate
+
+<br>
 
 访问地址
 > https//your-domain.com/api/docs
