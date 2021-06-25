@@ -22,3 +22,16 @@
 
 命令从当前目录读取composer.json文件，处理了依赖关系，并把其安装/更新到vendor目录下：
 > composer install 
+
+<br>
+
+## Composer版本更新 ##
+
+查看当前安装的版本
+> composer -v
+
+<br>
+
+将Composer更新到最新版本
+> composer self-update  
+> composer selfupdate
