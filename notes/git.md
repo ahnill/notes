@@ -79,12 +79,13 @@
 <br>
 
 推送到远程库：
-> git push -u origin master
+> git push -u origin master (指定远程库和分支)  
+> git push --all            (所有远程库和分支)
 
 <br>
 
 查看分支：
-> git branch (本地分支)  
+> git branch    (本地分支)  
 > git branch -r (远程分支)
 
 <br>
