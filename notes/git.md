@@ -18,8 +18,11 @@
 <br>
 
 拉取文件：
-> git pull (将远程主机的最新内容拉下来后直接合并)  
-> git fetch (将远程主机的最新内容拉到本地，用户在检查了以后决定是否合并到工作本机分支中)
+> git pull               (将远程主机的最新内容拉下来后直接合并)  
+> git pull origin master (指定远程库和分支)  
+> git pull aliyun master (指定远程库和分支)  
+> git pull gitee  master (指定远程库和分支)  
+> git fetch              (将远程主机的最新内容拉到本地，用户在检查了以后决定是否合并到工作本机分支中)
 
 <br>
 
@@ -51,15 +54,22 @@
 <br>
 
 关联远程库：
-> git remote add origin git@github.com:user/project.git  
-> git remote add origin git@gitee.com:user/project.git  
-> git remote set-url origin git@gitee.com:user/project.git
+> git remote add     origin git@github.com:user/project.git  
+> git remote add     gitee  git@gitee.com:user/project.git  
+> git remote set-url github git@github.com:user/project.git
 
 <br>
 
 关联多个远程库：
 > git remote set-url --add origin https://github.com/user/project.git  
-> git remote set-url --add origin https://gitee.com/user/project.git
+> git remote set-url --add aliyun https://codeup.aliyun.com/user/project.git  
+> git remote set-url --add gitee  https://gitee.com/user/project.git
+
+<br>
+
+删除某个远程库：
+> git remote remove https://github.com/user/project.git  
+> git remote remove origin
 
 <br>
 
