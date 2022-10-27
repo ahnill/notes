@@ -26,6 +26,12 @@
 
 <br>
 
+执行完add后想撤回add：
+> git reset HEAD  
+> git reset HEAD readme.txt
+
+<br>
+
 执行完commit后想撤回commit：
 > git reset --soft HEAD^
 

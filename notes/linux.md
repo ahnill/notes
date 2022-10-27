@@ -34,9 +34,29 @@
 
 <br>
 
+## 修改root密码 ##
+
+> sudo passwd root #当root密码为空  
+
+<br>
+
 ## Web服务器 ##
 
 重启nginx  
 > nginx -s reload
 
 <br>
+
+## OpenSSL的Nginx证书生成 ##
+
+1. 先生成一个公钥、密钥对  
+> openssl genrsa -out server.key 1024  
+
+2. 基于该私钥生成一个CSR（证书签名请求）  
+> openssl req -new -key server.key -out server.csr  
+
+3. 把自己当作一个CA，自己给自己注册一下  
+> openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt  
+
+4. 查看证书的相关信息  
+> openssl x509 -in server.crt -text  
