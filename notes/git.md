@@ -27,6 +27,7 @@
 <br>
 
 执行完add后想撤回add：
+> git status  
 > git reset HEAD  
 > git reset HEAD readme.txt
 
