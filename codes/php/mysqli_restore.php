@@ -21,7 +21,7 @@ if ($conn->query("SET NAMES UTF8") === false) {
 }
 
 // 从SQL文件中读取内容
-$filename = 'faqs.sql';
+$filename = 'db_name.sql';
 if (file_exists($filename)) {
     $handle = fopen($filename, "r");
     $text   = '';
