@@ -21,15 +21,15 @@ else:
     for ooo in out.decode('utf-8').split("\n"):
         if ooo.strip() == "":
             continue
-        name = ooo.strip().split(" ")[1]
-        if name == "git.py":
+        name = ooo.strip().split(" ")
+        if name[0] == "D" or name[1] == "git.py":
             continue
-        file = desktop + name
+        file = desktop + name[1]
         path = file[0:file.rfind("/")]
         try:
             if os.path.exists(path) == False:
                 os.makedirs(path)
-            if copyfile(name, file):
+            if copyfile(name[1], file):
                 print(f"Copied file [{file}]")
         except IOError as e:
             print("Unable to copy file. %s" % e)
