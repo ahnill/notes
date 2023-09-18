@@ -1,6 +1,6 @@
 # Laravel常用命令 #
 
-<br>
+<br>  
 
 ## 数据库迁移 ##
 
@@ -78,7 +78,7 @@
 
 ## 计划任务 ##
 
-运行计划任务(计划任务无法执行可考虑清除缓存)
+运行计划任务(计划任务无法执行可考虑清除缓存)  
 > php /www/wwwroot/www.fewwho.com/artisan schedule:run  
 > php artisan schedule:run
 
@@ -89,7 +89,7 @@
 
 ## 清理缓存 ##
 
-清除运行缓存
+清除运行缓存  
 > php artisan cache:clear
 
 清除视图缓存
