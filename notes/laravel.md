@@ -1,38 +1,35 @@
 # Laravel常用命令 #
 
-<br>
+	  
 
 ## 数据库迁移 ##
 
 生成迁移
 > php artisan make:migration create_[name]_table
 
-<br>
-
 运行迁移
 > php artisan migrate  
-> php artisan migrate --path=database/migrations/XXXX_XX_XX_XXXX_create_[name]_table.php
-
-<br>
+> php artisan migrate --path=database/migrations/XXXX_XX_XX_XXXX_create_[name]_table.php  
+> php artisan migrate --path=database/migrations/0000_00_00_000000_create_table.php
 
 生成填充
 > php artisan make:seeder [name]TableSeeder
 
-<br>
-
 运行填充
 > php artisan db:seed  
-> php artisan db:seed --class=[name]TableSeeder
-
-<br>
+> php artisan db:seed --class=[name]TableSeeder  
+> php artisan db:seed --class=BasicTableSeeder  
+> php artisan db:seed --class=UserSeeder  
+> php artisan db:seed --class=TestSeeder
 
 刷新迁移
 > php artisan migrate:fresh
 
-<br>
-
 刷新并填充
 > php artisan migrate:fresh --seed
+
+数据可以导出
+> mysqldump -uroot -p saas > /www/wwwroot/saas-server/saas.sql
 
 <br>
 
@@ -60,12 +57,11 @@
 ## 命令行 ##
 
 创建自定义命令
-> php artisan make:command TestCommandClassName
+> php artisan make:command TaobaoGoodsImport
 
-<br>
-
-查看所有命令
-> php artisan list
+自定义命令列表
+> php artisan what:import  
+> php artisan what:export
 
 <br>
 
@@ -75,10 +71,41 @@
 > php artisan make:model [ClassName]  
 > php artisan make:model Models/[ClassName]
 
-<br>
-
 创建模板并生成迁移文件
 > php artisan make:model Models/[ClassName] -m
+
+<br>
+
+## 计划任务 ##
+
+运行计划任务(计划任务无法执行可考虑清除缓存)
+> php /www/wwwroot/www.fewwho.com/artisan schedule:run  
+> php artisan schedule:run
+
+定期执行任务
+> * * * * * php /www/wwwroot/www.fewwho.com/artisan schedule:run > /dev/null 2>&1 &
+
+<br>
+
+## 清理缓存 ##
+
+清除运行缓存
+> php artisan cache:clear
+
+清除视图缓存
+> php artisan view:clear
+
+清除配置缓存
+> php artisan config:clear
+
+清除路由缓存
+> php artisan route:clear
+
+清除事件缓存
+> php artisan event:clear
+
+清除所有缓存
+> php artisan optimize:clear
 
 <br>
 
@@ -87,12 +114,19 @@
 引入插件
 > composer require "darkaonline/l5-swagger"
 
-<br>
-
 生成文档
 > php artisan l5-swagger:generate
 
-<br>
-
 访问地址
-> https//your-domain.com/api/docs
+> https//www.fewwho.com/api/docs
+
+## Linux命令 ##
+
+切换目录
+> cd /www/wwwroot/www.fewwho.com
+
+GIT拉取
+> git pull
+
+改变文件所有者
+> chown -R www:www ./
