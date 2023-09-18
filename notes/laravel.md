@@ -31,28 +31,28 @@
 数据可以导出
 > mysqldump -uroot -p saas > /www/wwwroot/saas-server/saas.sql
 
-<br>
+  
 
 ## 服务提供者 ##
 
 创建服务提供者
 > php artisan make:provider [Name]ServiceProvider
 
-<br>
+  
 
 ## 中间件 ##
 
 创建中间件
 > php artisan make:middleware [ClassName]
 
-<br>
+  
 
 ## 计划任务 ##
 
 执行计划任务
 > php artisan schedule:run
 
-<br>
+  
 
 ## 命令行 ##
 
@@ -63,7 +63,7 @@
 > php artisan what:import  
 > php artisan what:export
 
-<br>
+  
 
 ## 数据库模型 ##
 
@@ -74,7 +74,7 @@
 创建模板并生成迁移文件
 > php artisan make:model Models/[ClassName] -m
 
-<br>
+  
 
 ## 计划任务 ##
 
@@ -85,7 +85,7 @@
 定期执行任务
 > * * * * * php /www/wwwroot/www.fewwho.com/artisan schedule:run > /dev/null 2>&1 &
 
-<br>
+  
 
 ## 清理缓存 ##
 
@@ -107,26 +107,26 @@
 清除所有缓存
 > php artisan optimize:clear
 
-<br>
+  
 
 ## L5 Swagger 插件 ##
 
-引入插件
+引入插件  
 > composer require "darkaonline/l5-swagger"
 
-生成文档
+生成文档  
 > php artisan l5-swagger:generate
 
-访问地址
+访问地址  
 > https//www.fewwho.com/api/docs
 
 ## Linux命令 ##
 
-切换目录
+切换目录  
 > cd /www/wwwroot/www.fewwho.com
 
-GIT拉取
+GIT拉取  
 > git pull
 
-改变文件所有者
+改变文件所有者  
 > chown -R www:www ./
