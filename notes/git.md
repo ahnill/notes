@@ -124,6 +124,14 @@
 
 <br>
 
+本地回滚：
+> git log  
+> git reset --soft [commit-id]  
+> git reset --soft [HEAD~1]  
+> git checkout [commit-id] [path-to-filename]
+
+<br>
+
 查看用户名和电子邮箱：
 > git config user.name  
 > git config user.email
@@ -139,3 +147,4 @@
 生成并添加SSHkey：
 > cd ~/.ssh/  
 > ssh-keygen -t rsa -C "your-github@email.com"
+
