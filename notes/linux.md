@@ -10,6 +10,13 @@
 查看当前所有磁盘  
 > fdisk -l  
 
+查看当前所有磁盘分区格式  
+> lsblk -f  
+> blkid  
+
+查看所有挂载分区  
+> df -h  
+
 格式化新加入磁盘  
 > mkfs.ext4 /dev/vdc  
 
@@ -18,9 +25,6 @@
 
 挂载新磁盘到空文件夹  
 > mount /dev/vdc /data/vdcroot  
-
-查看所有挂载分区  
-> df -h  
 
 设置开机挂载  
 > vim /etc/fstab  
