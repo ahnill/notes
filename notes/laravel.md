@@ -58,11 +58,11 @@
 > php artisan make:job SystemJobAnother
 
 任务加入队列
-> SystemJob::dispatch([$dataList], 'dataMark')->onQueue('SystemJob');  
-> SystemJobAnother::dispatch([$dataNew], 'dataMarkNew')->onQueue('SystemJobAnother');
+> SystemJob::dispatch([`$`dataList], 'dataMark')->onQueue('SystemJob');  
+> SystemJobAnother::dispatch([`$`dataNew], 'dataMarkNew')->onQueue('SystemJobAnother');
 
 任务处理逻辑
-> SystemJob::__construct($dataList, method) {}  
+> SystemJob::__construct(`$`dataList, method) {}  
 > SystemJob::handle() { /* TODO */ }
 
 启动任务进程
