@@ -47,10 +47,33 @@
 
   
 
-## 计划任务 ##
+## 队列任务 ##
 
-执行计划任务
-> php artisan schedule:run
+生成数据表
+> php artisan queue:table  
+> php artisan migrate --path=database/migrations/0000_00_00_000000_create_jobs_table.php
+
+创建任务类
+> php artisan make:job SystemJob  
+> php artisan make:job SystemJobAnother
+
+任务加入队列
+> SystemJob::dispatch([$data], 'dataMark')->onQueue('SystemJob');  
+> SystemJobAnother::dispatch([$dataNew], 'dataMarkNew')->onQueue('SystemJobAnother');
+
+任务加入队列
+> SystemJob::dispatch([$data], 'dataMark')->onQueue('SystemJob');  
+> SystemJobAnother::dispatch([$dataNew], 'dataMarkNew')->onQueue('SystemJobAnother');
+
+任务处理逻辑
+> SystemJob::__construct($list, $method) {}  
+> SystemJob::handle() { /* TODO */ }
+
+启动任务进程
+> php artisan queue:work --queue=SystemJob,SystemJobAnother
+
+重启任务进程
+> php artisan  queue:restart
 
   
 
@@ -62,6 +85,12 @@
 自定义命令列表
 > php artisan what:import  
 > php artisan what:export
+
+  
+## 计划任务 ##
+
+执行计划任务
+> php artisan schedule:run
 
   
 
